@@ -1,0 +1,54 @@
+maths_marks = int(input("Enter maths marks: "))
+science_marks = int(input("Enter science marks: "))
+english_marks = int(input("Enter english marks: "))
+social_marks = int(input("enter social marks:"))
+telugu_marks = int(input("enter telugu marks:"))
+gk_marks = int(input("enter gk marks"))
+total_marks = maths_marks + science_marks + english_marks+social_marks+telugu_marks+gk_marks
+if total_marks >= 0 and total_marks <= 600:
+    percentage = (total_marks / 600) * 100
+    if percentage >= 40:
+        print("Student has passed!")
+    else:
+        print("Student has failed!")
+    if percentage >= 75:
+        print("Student has got distinction!")
+    elif percentage >= 60:
+        print("Student has got first class!")
+    elif percentage >= 50:
+        print("Student has got second class!")
+    else:
+        print("Student has got third class!")
+    if maths_marks > science_marks:
+        print("Maths marks are greater than science marks!")
+    elif maths_marks < science_marks:
+        print("Science marks are greater than maths marks!")
+    else:
+        print("Maths and science marks are equal!")
+    if science_marks > social_marks:
+        print("science marks are greater than social marks!")
+    elif science_marks < social_marks:
+     print("social marks are greater than science marks!")
+    else:
+        print("social and science marks are equall")
+    if english_marks > telugu_marks:
+        print("english marks are greater than telugu marks!")
+    elif english_marks < telugu_marks:
+        print("english marks are less than telugu marks!")
+    else:
+        print("english and telugu marks are equall")
+    if gk_marks >= 50:
+        print("gk marks are greater than or equal to 50!")
+    else:
+        print("gk marks are less than 50!")
+    if total_marks > 600:
+        print("Total marks are greater than 600!")
+    elif total_marks == 600:
+        print("Total marks are equal to 600!")
+    else:
+        print("Total marks are less than 600!")
+    if maths_marks == 100 and science_marks == 100 and english_marks == 100 and social_marks == 100 and gk_marks ==100:
+        print("Student has got perfect score!")
+    else:
+        print("Student has not got perfect score!")
+else: print("Invalid total marks!")
